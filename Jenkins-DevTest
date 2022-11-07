@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage("First"){
+            steps{
+                echo "Welcome to My First Jenkins"
+            }
+        }
+        stage("Git CheckOut"){
+            steps{
+                git credentialsId: 'github', url: 'https://github.com/nusanetwork/testing/'
+            }
+        }
+    }
+}
