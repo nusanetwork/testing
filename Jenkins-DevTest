@@ -6,3 +6,5 @@ pipeline{
                 git credentialsId: 'github', url: 'https://github.com/nusanetwork/testing'
             }
         }
+    }    
+}
